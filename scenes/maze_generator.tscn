@@ -1,0 +1,17 @@
+[gd_scene load_steps=5 format=3 uid="uid://cj6jw6082118h"]
+
+[ext_resource type="Texture2D" uid="uid://l1qv7lwf8mxo" path="res://sprites/tiles.png" id="1_xq07n"]
+[ext_resource type="Script" path="res://scripts/MazeGenerator.gd" id="2_v1mov"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5emel"]
+texture = ExtResource("1_xq07n")
+0:0/0 = 0
+0:1/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_qijfg"]
+sources/0 = SubResource("TileSetAtlasSource_5emel")
+
+[node name="MazeGenerator" type="TileMap"]
+tile_set = SubResource("TileSet_qijfg")
+format = 2
+script = ExtResource("2_v1mov")
