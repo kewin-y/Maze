@@ -69,7 +69,7 @@ func is_next_valid(cell : Vector2i, dir : Vector2i) -> bool:
 		var y_min : int = next_cell.y - 1
 		var y_max : int = next_cell.y + 1
 	
-	# If we are travelling up or down
+		# If we are travelling up or down
 		if dir.x == 0:
 			y_min = next_cell.y - 1 if dir == Vector2i.UP else next_cell.y
 			y_max = next_cell.y if dir == Vector2i.UP else next_cell.y + 1
